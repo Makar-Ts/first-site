@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="https://atuin.ru/demo/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Site</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header_body">
+                <div class="header_logo">
+                    <img src="Content/logo.png" class="header_logo">
+                </div>
+
+                <div class="header_burger">
+                    <span>
+
+                    </span>
+                </div>
+
+                <nav class="header_menu">
+                    <ul class="header_list" type=" ">
+                        <li> <a href="#about" class="header_link">О компании</a> </li>
+                        <li> <a href="#" class="header_link">Наши цены</a> </li>
+                        <li> <a href="#feedback" class="header_link">Обратная связь</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <div class="container">
+            <div class="about_body wow animate__animated animate__backInLeft">
+                <div class="main_about">
+                    <h1>Аренда серверов</h1>
+                </div>
+
+                <div class="another_about">
+                    <p>Сервера в Швеции, России, Украине и Португалии</p>
+                    <p>Наши плюсы:</p>
+                </div>
+                
+                <nav class="about_pros_menu">
+                    <ul class="about_pros_list" type="point">
+                        <li>Быстрый доступ к серверу(от 2 до 60 минут от покупки)</li>
+                        <li>Сравнительно небольшая цена</li>
+                        <li>Удобный интерфейс работы</li>
+                        <li>Большой объем памяти</li>
+                    </ul>
+                </nav>
+
+                <div class="button"><button type="sumbit" class="about_button">Оформить аренду</button></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <form method='post' action="create/create.php">
+                <div class="feedback_container wow animate__animated animate__backInLeft">
+                    <div class="section_header">
+                        <p class="section_title">
+                            Обратный звонок
+                        </p>
+
+                        <p class="section_subtitle">
+                            Заполните форму и мы вам перезвоним
+                        </p>
+
+                        <div class="form_input">
+                            <div class="feedback_name">
+                                Имя:
+                            </div>
+                            <input type="text" class="feedback_input" name="name" placeholder="Ваше имя"/>
+
+                            <div class="feedback_name">
+                                Телефон:
+                            </div>
+                            <input type="text" class="feedback_input" name="phone" placeholder="Ваш телефон"/>
+
+                            <div class="feedback_name">
+                                Почта:
+                            </div>
+                            <input type="text" class="feedback_input" name="mail" placeholder="Ваша почта"/>
+
+                            <div class="feedback_name">
+                                Комментарий:
+                            </div>
+                            <textarea id="feedback_textarea" class="feedback_textarea" name="problem" placeholder="Ваш коментарий"></textarea>
+
+                            <div class="button"><button type="sumbit" id="feedback_button" class="feedback_button">Отправить</button></div>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

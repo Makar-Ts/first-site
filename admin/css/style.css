@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: greenyellow;
+}
+
+td {
+    padding-left: 10px;
+}
+
+
+.aplication {
+    margin: 5px;
+    width: 30%;
+}
+
+.request {
+    margin: 4px 0px;
+    padding: 2px 0px;
+}
+
+
+
+.button_body {
+    display: flex;
+    justify-content: end;
+}
+
+.delete_button {
+    background-color: black;
+    color: greenyellow;
+    padding: 2px 0px;
+    text-decoration: underline;
+}
+.delete_button:hover {
+    text-decoration: none;
+}
+.delete_button:active{
+    text-decoration: line-through;
+}
